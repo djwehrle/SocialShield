@@ -9,7 +9,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using SocialShield.Models.Identity;
 
-namespace SocialShield
+namespace SocialShield.AppStart
 {
     public class EmailService : IIdentityMessageService
     {

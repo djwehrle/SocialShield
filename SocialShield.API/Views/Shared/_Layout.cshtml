@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="description" content="An API for interfacing with the Social Shield application." />
+
+    <title>@ViewBag.Title - Social Shield API</title>
+
+    @Styles.Render("~/Content/core.bundle")
+    @RenderSection("styles", false)
+</head>
+<body>
+    <nav class="bg-dark navbar navbar-dark navbar-expand-lg">
+        <div class="container">
+            @Html.ActionLink("Social Shield API", "Index", "Home", null, new { @class = "navbar-brand" })
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="mr-auto navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body-content container">
+        @RenderBody()
+    </div>
+
+    <hr />
+
+    <footer class="container">
+        <p class="text-right">&copy; @DateTime.Now.Year - Social Shield API</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/core")
+    @RenderSection("scripts", false)
+</body>
+</html>

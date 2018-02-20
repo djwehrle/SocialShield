@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace SocialShield
+namespace SocialShield.AppStart
 {
     public class FilterConfig
     {

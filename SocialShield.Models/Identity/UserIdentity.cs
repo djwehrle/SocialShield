@@ -16,5 +16,13 @@ namespace SocialShield.Models.Identity
             // Add custom user claims here
             return userIdentity;
         }
+
+        public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<UserIdentity> manager, string authenticationType)
+        {
+            // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
+            ClaimsIdentity userIdentity = await manager.CreateIdentityAsync(this, authenticationType);
+            // Add custom user claims here
+            return userIdentity;
+        }
     }
 }
