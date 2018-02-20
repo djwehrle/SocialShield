@@ -60,6 +60,10 @@
     <Compile Include="Identity\UserIdentity.cs" />
     <Compile Include="Identity\SocialShieldIdentityDbContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="School.cs" />
+    <Compile Include="SocialShieldDbContext.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="UserSchool.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
