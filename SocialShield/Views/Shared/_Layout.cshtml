@@ -21,6 +21,10 @@
             <div id="navbarSupportedContent" class="collapse navbar-collapse">
                 <ul class="mr-auto navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home", null, new { @class = "nav-link" })</li>
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Schools", "Index", "Schools", null, new { @class = "nav-link" })</li>
+                    }
                     <li>@Html.ActionLink("About", "About", "Home", null, new { @class = "nav-link" })</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home", null, new { @class = "nav-link" })</li>
                 </ul>
