@@ -1,7 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
+using SocialShield;
 
-[assembly: OwinStartupAttribute(typeof(SocialShield.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 namespace SocialShield
 {
     public partial class Startup
